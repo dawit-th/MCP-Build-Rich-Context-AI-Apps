@@ -167,4 +167,50 @@ sequenceDiagram
 
 1.  **Clone the repository:**
     ```bash
-    git clone https
+    git clone https://github.com/your-username/MCP-Build-Rich-Context-AI-Apps.git
+    cd MCP-Build-Rich-Context-AI-Apps
+    ```
+
+2.  **Create a virtual environment and install dependencies:**
+    It's highly recommended to use a virtual environment to manage project dependencies.
+    ```bash
+    # Create and activate a virtual environment
+    python3 -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+    # Install dependencies from pyproject.toml
+    pip install .
+    ```
+
+3.  **Set up environment variables:**
+    The agent requires a DeepSeek API key. You can set this as an environment variable. For convenience, you can create a `.env` file in the project root, and the application will load it automatically.
+    ```
+    # .env file
+    DEEPSEEK_API_KEY="your-api-key-here"
+    ```
+
+## Usage
+
+1.  **Start the Jupyter Notebook server:**
+    ```bash
+    jupyter notebook
+    ```
+2.  **Open the main demo notebook:**
+    In your browser, navigate to and open `Enhanced_MCP_Voice_Agent_Demo.ipynb`.
+3.  **Run the cells:**
+    Execute the cells sequentially to set up the agent and the interactive UI.
+4.  **Interact with the Agent:**
+    Use the UI widgets to start recording, speak your query, and listen to the AI's response.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request. We have a few guidelines to follow:
+
+-   Adhere to the existing code style and documentation patterns.
+-   Ensure any new code is well-commented and documented.
+-   Add tests for new features and ensure all tests pass.
+-   Update performance metrics if your changes impact them.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
